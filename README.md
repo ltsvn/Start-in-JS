@@ -1,1 +1,1 @@
-# CodeWars
+# Start-in-JS
