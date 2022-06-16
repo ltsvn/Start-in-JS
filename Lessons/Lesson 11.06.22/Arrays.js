@@ -6,32 +6,32 @@
 // console.log
 
 // const items = ["Start", "menu1", "menu2", "menu3", "menu4", "menu5"];
-// // // const newItems = new Array(1,2,3);
-// // //
-// // // console.log("Items: ", items);
-// // //
-// // // const lists = document.querySelectorAll('.list');
-// // // const list = lists[0];
-// // // const list2 = lists[1];
-// // //
-// // //
-// // // // for
-// // // for(let i = 0; i < items.length; i++){
-// // //     if(i < 3){
-// // //         const liE = document.createElement('li');
-// // //         liE.innerText = items[i];
-// // //         list.append(liE);
-// // //     }
-// // //     if(i >= 3 || i <= 5) {
-// // //         const liE = document.createElement('li');
-// // //         liE.innerText = items[i];
-// // //         list2.append(liE);
-// // //     }
-// // // }
-// // //
-// // // console.log("lIST:", list.classList);
+// const newItems = new Array(1,2,3);
+//
+// console.log("Items: ", items);
+//
+// const lists = document.querySelectorAll('.list');
+// const list = lists[0];
+// const list2 = lists[1];
+//
+//
+// // for
+// for(let i = 0; i < items.length; i++){
+//     if(i < 3){
+//         const liE = document.createElement('li');
+//         liE.innerText = items[i];
+//         list.append(liE);
+//     }
+//     if(i >= 3 || i <= 5) {
+//         const liE = document.createElement('li');
+//         liE.innerText = items[i];
+//         list2.append(liE);
+//     }
+// }
+//
+// console.log("lIST:", list.classList);
 
-...................forEach...................
+// ...................forEach...................
 
 // items.forEach((item, index) => {
 //     if (index < FIRST_LIST_LIMIT) {
@@ -46,6 +46,4 @@
 //         list2.append(liE);
 //     }
 // })
-
-............................
 
