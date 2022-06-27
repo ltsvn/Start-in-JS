@@ -4,26 +4,49 @@ const SECOND_LIST_END = 6;
 const THIRD_LIST_END= 9;
 // let listArray = [];
 
+let ul1 = document.getElementsByClassName("list1");
+let ul2 = document.getElementsByClassName("list2");
+let ul3 = document.getElementsByClassName("list3");
 
-(function(){
+// function renderProductList(element, index, arr) {
+//     for(let i = 0; i<3; i++){
+//     let li = document.createElement('li');
+//     li.setAttribute('class','item');
+//
+//     ul1[0].appendChild(li);
+//
+//     li.innerHTML=li.innerHTML + element;
+//     }
+// }
 
-        let ul = document.createElement('ul');
-        ul.setAttribute('id', 'list');
+let nav = document.getElementById('container');
 
-        productList = ['Electronics Watch', 'House wear Items', 'Kids wear'];
+function ulInicialization(){
+  for(let i = 0; i<3; i++) {
+      let ul = document.createElement('ul');
+      if (i == 0) ul.setAttribute('class', 'list1');
+      else if (i == 1) ul.setAttribute('class', 'list2');
+      else if (i == 2) ul.setAttribute('class', 'list3');
+      nav.appendChild(ul);
+  }
+ //  for(let i = 0; i<9; i++) {
+ //     let li  = document.createElement('li');
+ //     if(i==0) li.setAttribute('id','item1');
+ //     else if(i==1) li.setAttribute('id','item2');
+ //     else if(i==2) li.setAttribute('id','item3');
+ //     else if(i==3) li.setAttribute('id','item4');
+ //     else if(i==4) li.setAttribute('id','item5');
+ //     else if(i==5) li.setAttribute('id','item6');
+ //     else if(i==6) li.setAttribute('id','item7');
+ //     else if(i==7) li.setAttribute('id','item8');
+ //     else if(i==8) li.setAttribute('id','item9');
+ //
+ // }
 
-        document.getElementById('container').appendChild(ul);
-        FIRST_LIST_END.forEach(renderProductList);
+        // FIRST_LIST_END.forEach(renderProductList);
+renderProductList(FIRST_LIST_END);
 
-    function renderProductList(element, index, arr) {
-        let li = document.createElement('li');
-        li.setAttribute('class','item');
-
-        ul.appendChild(li);
-
-        li.innerHTML=li.innerHTML + element;
-    }
-})();
+};
 
 // let ul =document.createElement('ul');
 //

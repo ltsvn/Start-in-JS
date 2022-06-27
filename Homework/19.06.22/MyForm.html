@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyForm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <form class="form">
+            <section class="container">
+                <h2>Personal Data</h2>
+                <div class="main_inputs">
+                    <div class="initials_inputs add_flex">
+                        <input type="text" placeholder="Name*" name="name" class="input width50 js-input">
+                        <input type="text" placeholder="Surname*" name="surname" class="input width50 js-input">
+                    </div>
+                    <div class="pesel_input add_flex">
+                        <input type="text" placeholder="PESEL*" name="pesel" class="input pesel">
+                    </div>
+                    <div class="checkbox_input">
+                        <input type="checkbox" id="agree">
+                        <label for="agree">I certify that I do not have a PESEL number</label>
+                    </div>
+                </div>
+                <div class="document_inputs add_flex">
+                    <select name="document_list" id="documents" >
+                        <option disabled selected>Type of document*</option>
+                        <option value="Residence card">Residence card</option>
+                        <option value="Passport">Passport</option>
+                        <option value="Driving license">Driving license</option>
+                    </select>
+                    <input type="text" placeholder="Number of document*" class="input width50">
+                </div>
+            </section>
+            <section class="container">
+                <div class="second_section_title add_flex">
+                <h2>Service delivery addres</h2>
+                <h2 class="option">(option)</h2>
+                </div>
+                <div class="first_part_adress add_flex">
+                    <input type="text" placeholder="Street" class="street js-input">
+                    <input type="text" placeholder="House number" class="house_number ">
+                    <input type="text" placeholder="Room number" class="room number ">
+                </div>
+                <div class="second_part_adress add_flex">
+                    <input type="text" placeholder="City" class="city js-input">
+                    <input type="text" placeholder="Post code" class="post_code">
+                </div>
+            </section>
+            <footer class="footer container">
+                <div class="footer_submit">
+                    <button class="submit">Submit</button>
+                </div>
+            </footer>
+        </form>
+<script src="validation.js"></script>
+</body>
+
+</html>
